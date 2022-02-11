@@ -184,11 +184,10 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-.hero-btn {
+.btn {
   transition-property: background-color;
   transition-timing-function: var(--timing-function);
   transition-duration: var(--duration);
-  display: block;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -199,11 +198,18 @@ body {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+.hero-btn {
+  display: block;
   padding: 10px 32px;
   margin: 0 auto;
 }
 .hero-btn:hover,
-.hero-btn:focus {
+.hero-btn:focus,
+.subscribe-btn:hover,
+.subscribe-btn:focus,
+.btn-modal-submit:hover,
+.btn-modal-submit:focus {
   background: var(--hero-btn-hover-color);
   cursor: pointer;
 }
@@ -460,30 +466,11 @@ body {
   display: flex;
 }
 .subscribe-btn {
-  /* position: relative; */
-  transition-property: background-color;
-  transition-timing-function: var(--timing-function);
-  transition-duration: var(--duration);
   display: flex;
   align-items: center;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
   padding: 10px 28px;
-  color: var(--white-color);
-  background: var(--accent-color);
   width: 200px;
   height: 50px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-}
-.subscribe-btn:hover,
-.subscribe-btn:focus {
-  background-color: var(--hero-btn-hover-color);
-  cursor: pointer;
 }
 .footer-form-icon {
   width: 24px;
@@ -564,7 +551,6 @@ body {
   line-height: calc(28 / 18);
   color: var(--white-color);
   background-color: var(--hover-overly);
-
   transition-property: transform;
   transition-timing-function: var(--timing-function);
   transition-duration: var(--duration);
@@ -617,6 +603,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   visibility: visible;
+  padding: 40px;
 }
 .is-hidden {
   opacity: 0;
@@ -641,4 +628,12 @@ body {
 .btn-modal-close:hover {
   cursor: pointer;
   fill: var(--accent-color);
+}
+.btn-modal-submit {
+  display: block;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
 }
