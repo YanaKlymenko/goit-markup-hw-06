@@ -629,6 +629,13 @@ body {
   cursor: pointer;
   fill: var(--accent-color);
 }
+.modal-form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  color: var(--fist-text-color);
+}
 .btn-modal-submit {
   display: block;
   align-items: center;
