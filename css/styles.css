@@ -743,15 +743,15 @@ body {
   margin-right: 7px;
   border: 1px solid var(--fist-text-color);
   border-radius: 2px;
-  color: rgba(0, 0, 0, 0);
 }
 .modal-form-check:checked + .modal-text-terms .modal-check-icon {
   background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  color: var(--white-color);
 }
 .modal-form-check:focus + .modal-text-terms .modal-check-custom {
   border-color: var(--accent-color);
+}
+.modal-form-check:not(:checked) + .modal-text-terms .modal-check-custom {
+  border-color: var(--fist-text-color);
 }
 .modal-check-icon {
   width: 16px;
