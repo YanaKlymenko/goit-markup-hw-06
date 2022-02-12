@@ -643,7 +643,8 @@ body {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.btn-modal-close:hover {
+.btn-modal-close:hover,
+.btn-modal-close:focus {
   cursor: pointer;
   fill: var(--accent-color);
 }
@@ -680,11 +681,6 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-/* .modal-form-input:focus,
-.modal-form-textarea:focus {
-  outline: none;
-  border-color: var(--accent-color);
-} */
 .modal-form-icon {
   position: absolute;
   transition-property: fill;
@@ -697,9 +693,6 @@ body {
   height: 18px;
   color: var(--fist-text-color);
 }
-/* .modal-form-input:focus + .modal-form-icon {
-  fill: var(--accent-color);
-} */
 .modal-form-wrap:focus-within .modal-form-input,
 .modal-form-wrap:focus-within .modal-form-icon,
 .modal-form-textarea:focus {
