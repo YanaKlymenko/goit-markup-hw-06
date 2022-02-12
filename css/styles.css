@@ -744,7 +744,8 @@ body {
   border-color: var(--accent-color);
 }
 .modal-form-check:checked + .modal-text-terms .modal-check-custom {
-  border: none;
+  border-color: var(--accent-color);
+  background-origin: border-box;
 }
 .modal-check-icon {
   width: 17px;
