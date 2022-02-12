@@ -740,11 +740,8 @@ body {
 .modal-form-check:checked + .modal-text-terms .modal-check-icon {
   background-color: var(--accent-color);
 }
-.modal-form-check:focus + .modal-text-terms .modal-check-custom {
+.modal-form-check:focus-visible + .modal-text-terms .modal-check-custom {
   border-color: var(--accent-color);
-}
-.modal-form-check:not(:checked) + .modal-text-terms .modal-check-custom {
-  border-color: var(--fist-text-color);
 }
 .modal-check-icon {
   width: 16px;
