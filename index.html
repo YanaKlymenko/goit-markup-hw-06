@@ -499,8 +499,15 @@
           </div>
           <label class="modal-label" for="user-comment">Комментарий</label>
           <textarea class="modal-form-textarea" name="modal-form-comment" id="user-comment" placeholder="Введите текст"></textarea>
-          <input type="checkbox" name="modal-form-check" id="user-check">
-          <label class="modal-text-terms text" for="user-chek">Соглашаюсь с рассылкой и принимаю <a class="modal-check-terms" href="">Условия договора</a></label>
+          <input class="modal-form-check visually-hidden" type="checkbox" name="modal-form-check" id="user-check"/>
+          <label class="modal-text-terms text" for="user-check">
+            <span class="modal-check-custom">
+              <svg class="modal-check-icon">
+                <use href="./images/icons.svg#icon-modalcheck"></use>
+              </svg>
+            </span>
+            <span>Соглашаюсь с рассылкой и принимаю <a class="modal-check-terms" href="">Условия договора</a></span>
+          </label>
           <button class="btn-modal-submit btn" type="submit">Отправить</button>
         </form>
       </div>
