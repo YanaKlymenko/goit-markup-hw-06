@@ -743,8 +743,11 @@ body {
 .modal-form-check:focus-visible + .modal-text-terms .modal-check-custom {
   border-color: var(--accent-color);
 }
+.modal-form-check:checked + .modal-text-terms .modal-check-custom {
+  border: none;
+}
 .modal-check-icon {
-  width: 16px;
+  width: 17px;
   height: 16px;
   fill: currentColor;
 }
