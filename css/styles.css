@@ -420,7 +420,7 @@ body {
   margin-bottom: 9px;
 }
 .footer-soc {
-  margin-right: 93px;
+  margin-right: auto;
 }
 .footer-title {
   font-weight: 700;
@@ -615,7 +615,6 @@ body {
   transition-timing-function: var(--timing-function);
   transition-duration: var(--duration);
   width: 528px;
-  height: 581px;
   border-radius: 4px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -642,6 +641,7 @@ body {
   height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--white-color);
 }
 .btn-modal-close:hover,
 .btn-modal-close:focus {
